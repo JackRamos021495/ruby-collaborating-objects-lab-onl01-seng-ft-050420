@@ -29,9 +29,6 @@ attr_accessor :name
     self.new(name)
   end
 
-  def save
-    @@all << self
-  end
 
   def print_songs
   end
