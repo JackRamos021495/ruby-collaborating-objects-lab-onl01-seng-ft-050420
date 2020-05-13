@@ -26,7 +26,7 @@ attr_accessor :name, :songs
   def save
     @@all << self
   end
-  
+
   def print_songs
   end
 
