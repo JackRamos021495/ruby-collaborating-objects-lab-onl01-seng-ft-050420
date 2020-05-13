@@ -21,6 +21,12 @@ attr_accessor :name
 
 
   def self.find_or_create_by_name
+    @@all.each do |artist|
+      if artist.name == name
+        artist
+      end
+    end
+    self.new(name)
   end
 
   def save
