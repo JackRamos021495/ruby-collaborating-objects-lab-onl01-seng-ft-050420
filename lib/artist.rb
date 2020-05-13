@@ -31,7 +31,7 @@ attr_accessor :name
 
 
   def print_songs
-    Song.all.each {|song| puts song.name if song.name == self}
+    Song.all.each {|song| puts song.name if song.artist == self}
   end
 
 
