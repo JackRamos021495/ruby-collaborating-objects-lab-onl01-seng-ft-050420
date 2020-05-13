@@ -20,7 +20,7 @@ attr_accessor :name
 #  end
 
 
-  def self.find_or_create_by_name
+  def self.find_or_create_by_name(name)
     @@all.each do |artist|
       if artist.name == name
         artist
