@@ -23,7 +23,7 @@ attr_accessor :name
   def self.find_or_create_by_name(name)
     @@all.each do |artist|
       if artist.name == name
-        artist
+        return artist
       end
     end
     self.new(name)
